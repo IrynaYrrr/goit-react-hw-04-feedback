@@ -1,0 +1,35 @@
+.feedbackButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.feedbackBtn {
+  border-radius: 5px;
+  width: 100%;
+  margin: 15px 0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  cursor: pointer;
+  background-color: #ffb726;
+}
+
+.good {
+  composes: feedbackBtn;
+  background-color: #4caf50;
+}
+
+.neutral {
+  composes: feedbackBtn;
+  background-color: #ffb726;
+}
+
+.bad {
+  composes: feedbackBtn;
+  background-color: #ff2020;
+}
